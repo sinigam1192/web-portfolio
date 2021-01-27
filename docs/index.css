@@ -166,7 +166,9 @@
     z-index: 180;
 }
 
-
+.scroll-fade{
+    opacity: 0;
+}
 /* TOPに戻る */
 #page_top{
     width: 50px;
