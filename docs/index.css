@@ -113,7 +113,15 @@
     border-top: 0px;
     height: 1rem;
 }
-
+.skill-icon{
+    transform:scale(1,1);
+    transition:0.5s all;
+}
+.skill-icon:hover {
+    transform:scale(1.9,1.9);
+    transition:0.5s all;
+    color: #F27A5E;
+}
 /* content */
 .contents-chunk{
     margin-top: 5%;
@@ -131,6 +139,24 @@
 }
 .non_display{
     visibility: hidden;
+}
+#skill-content{
+
+}
+.skill-content{
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 1px solid#D9CDB8;
+    padding: 2.5%;
+}
+.skill-centers-icon{
+   /* transform:scale(4,4); */
+   font-size:5rem;
+}
+.skill-centers{
+    margin-top: 15%;
 }
 /* 準備中 */
 .wait-now{
