@@ -1,15 +1,138 @@
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- bootstrap & require css js files -->
+        <!-- google font web-->
+        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+         <!-- devicons -->
+        <link href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
+        <!-- requrie -->
+        <link rel="stylesheet" href="index.css">        
+        <script type="text/javascript" src="index.js"></script>
     </head>
-    <body>
-        <header>
-            <div class='header-contents'>TOP</div>
-            <div class='header-contents'>WORKS</div>
-            <div class='header-contents'>SKILLS</div>
-            <div class='header-contents'>CONTACT</div>
+    <body class="wf-sawarabimincho">
+        <div class="header-contents-fix bg-color-2">
+            <div class="container">
+                <a href="#profile" class='header-contents col-2 color-3'><h4>PROFILE</h4></a>
+                <a href="#skills" class='header-contents col-2 color-3'><h4>SKILLS</h4></a>
+                <a href="#works" class='header-contents col-2 color-3'><h4>WORKS</h4></a>
+                <a href="#contact" class='header-contents col-2 color-3'><h4>CONTACT</h4></a>
+            </div>
+        </div>
+        <header class="header-contents-top">
+            <div class="container">
+                <a href="#profile" class='header-contents col-2 color-3'><h4>PROFILE</h4></a>
+                <a href="#skills" class='header-contents col-2 color-3'><h4>SKILLS</h4></a>
+                <a href="#works" class='header-contents works col-2 color-3'><h4>WORKS</h4></a>
+                <a href="#contact" class='header-contents col-2 color-3'><h4>CONTACT</h4></a>
+            </div>
         </header>
-        <div calss="container"></div>
+        
+        <div class="top-image-caption-area bg-color-1">
+            <div class="top-image-caption">
+                <h1 class="color-3">welcome</h1>
+                <h3 class="color-3">shinohara's portfolio-web-site!</h3>
+            </div>
+        </div>
+        <div class="top-image-caption-bg-area"></div>
+        <div class="top-image-slide haeder-images">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/photo3.JPG" class="d-block w-100 main-img" alt="第1スライド">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/photo2.JPG" class="d-block w-100 main-img" alt="第2スライド">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/photo1.JPG" class="d-block w-100 main-img" alt="第3スライド">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">前へ</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">次へ</span>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div calss="container" id="main">
+            <div id="profile" class="contents-body bg-color-5">
+                <div class="contents-title col-4 offset-4">
+                    <div class="contents-border-top"></div> 
+                    <p class="contents-title-caption">プロフィール</p>
+                    <div class="contents-border-under"></div>
+                </div>
+                <div class="contents-chunk row">
+                    <div class="profile-img col-3 offset-2 ">
+                        <img src="./images/photo3.JPG" class="d-block main-img ">
+                    </div>
+                    <div class="profile-text offset-2">
+                        <p>このポートフォリオをご覧頂きありがとうございます。</p>
+                        <p>篠原と申します。</p>
+                        <p>webエンジニアとして活動させていただいてます。</p>
+                        <p>生まれは愛知県、現在は東京都に住んでいます。</p>
+                        <p>温泉が好きです。</p>
+                        <p>是非おすすめの温泉がありましたら教えてください。笑</p>
+                    </div>
+                </div>
+            </div>
+            <div id="skills" class="contents-body bg-color-1">
+                <div class="contents-title col-4 offset-4">
+                    <div class="contents-border-top-l"></div> 
+                    <p class="contents-title-caption color-3">スキル</p>
+                    <div class="contents-border-under-l"></div>
+                </div>
+                <div class="contents-chunk color-3">
+                    <div class="skill-icons row">
+                        <div class="offset-3 centers"></div>
+                        <i class="fas fa-code col-1 centers" data-toggle="tooltip" data-html="true" data-placement="down" title="<b>HTML</b><u>付き</u><em>ツールチップ</em>"</span></i></i>
+                        <i class="fas fa-chalkboard-teacher col-1 centers"></i>
+                        <i class="fas fa-database col-1 centers"></i>
+                        <i class="fas fa-file-excel col-1 centers"></i>
+                        <i class="devicons devicons-ruby col-1 centers"></i>
+                        <i class="devicons devicons-ruby_on_rails col-1 centers"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div id="works" class="contents-body bg-color-3">
+                <div class="contents-title col-4 offset-4">
+                    <div class="contents-border-top"></div> 
+                    <p class="contents-title-caption">ワークス</p>
+                    <div class="contents-border-under"></div>
+                </div>
+                <div class="contents-chunk">
+                    <div class="wait-now"><p>準備中</p></div>
+                </div>
+            </div>
+            <div id="contact" class="contents-body bg-color-4">
+                <div class="contents-title col-4 offset-4">
+                    <div class="contents-border-top"></div> 
+                    <p class="contents-title-caption">お問い合わせ</p>
+                    <div class="contents-border-under"></div>
+                </div>
+                <div class="contents-chunk">
+                    <div class="wait-now"><p>準備中</p></div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id="page_top" class="bg-color-2"><a href="#"></a></div>
+
         <footer>
 
         </footer>
