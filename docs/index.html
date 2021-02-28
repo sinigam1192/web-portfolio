@@ -9,6 +9,7 @@
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- font awesome -->
@@ -17,58 +18,69 @@
         <link href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
         <!-- requrie -->
         <link rel="stylesheet" href="index.css">        
-        <script type="text/javascript" src="index.js"></script>
+        
     </head>
     <body class="wf-sawarabimincho">
-        <div class="header-contents-fix bg-color-2">
-            <div class="container">
-                <a href="#profile" class='header-contents col-2 color-3'><h4>PROFILE</h4></a>
-                <a href="#skills" class='header-contents col-2 color-3'><h4>SKILLS</h4></a>
-                <a href="#works" class='header-contents col-2 color-3'><h4>WORKS</h4></a>
-                <a href="#contact" class='header-contents col-2 color-3'><h4>CONTACT</h4></a>
+        <div id="headers">
+            <div class="header-contents-fix bg-color-2">
+                <div class="container">
+                    <!-- <h1 class="scroll color-3">0</h1><p>px</p>
+                    <h1 class="height color-3">0</h1><p>px(</p>
+                    <h1 class="page color-3">0</h1><p>ページ</p>
+                    <h1 class="up color-3">0</h1><p>高さ切り替え</p>
+                    <h1 class="bottom color-3">0</h1><p>高さ切り替え</p> -->
+                    <a href="#top" class='header-contents header-logo col-2 color-3'><h4><i class="fas fa-leaf"></i></h4></a>
+                    <a href="#profile" class='header-contents col-2 color-3'><h4>PROFILE</h4></a>
+                    <a href="#skills" class='header-contents col-2 color-3'><h4>SKILLS</h4></a>
+                    <a href="#works" class='header-contents col-2 color-3'><h4>WORKS</h4></a>
+                    <a href="#contact" class='header-contents col-2 color-3'><h4>CONTACT</h4></a>
+                </div>
             </div>
-        </div>
-        <header class="header-contents-top">
+            <header class="header-contents-top">
             <div class="container">
+                
                 <a href="#profile" class='header-contents col-2 color-3'><h4>PROFILE</h4></a>
                 <a href="#skills" class='header-contents col-2 color-3'><h4>SKILLS</h4></a>
                 <a href="#works" class='header-contents works col-2 color-3'><h4>WORKS</h4></a>
                 <a href="#contact" class='header-contents col-2 color-3'><h4>CONTACT</h4></a>
             </div>
-        </header>
-        
-        <div class="top-image-caption-area bg-color-1 scroll-fade">
-            <div class="top-image-caption">
-                <h1 class="color-3">welcome</h1>
-                <h3 class="color-3">shinohara's portfolio-web-site!</h3>
-            </div>
+            </header>
         </div>
-        <div class="top-image-caption-bg-area"></div>
-        <div class="top-image-slide haeder-images">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/photo3.JPG" class="d-block w-100 main-img" alt="第1スライド">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/photo2.JPG" class="d-block w-100 main-img" alt="第2スライド">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/photo1.JPG" class="d-block w-100 main-img" alt="第3スライド">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">前へ</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">次へ</span>
-                </a>
-              </div>
-            </div>
-        </div>
+            
+
         <div calss="container" id="main">
+            <div id="top" class="contents-body">
+                <div class="top-image-caption-area bg-color-1 scroll-fade">
+                    <div class="top-image-caption">
+                        <h1 class="color-3">welcome</h1>
+                        <h3 class="color-3">shinohara's portfolio-web-site!</h3>
+                    </div>
+                </div>
+                <div class="top-image-caption-bg-area"></div>
+                <div class="top-image-slide haeder-images">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./images/photo3.JPG" class="d-block w-100 main-img" alt="第1スライド">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/photo2.JPG" class="d-block w-100 main-img" alt="第2スライド">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/photo1.JPG" class="d-block w-100 main-img" alt="第3スライド">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">前へ</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">次へ</span>
+                        </a>
+                      </div>
+                    </div>
+            </div>
             <div id="profile" class="contents-body bg-color-5">
                 <div class="contents-title col-4 offset-4">
                     <div class="contents-border-top"></div> 
@@ -77,15 +89,21 @@
                 </div>
                 <div class="contents-chunk row">
                     <div class="profile-img col-3 offset-2">
-                        <img src="./images/photo3.JPG" class="d-block main-img scroll-fade">
+                        <img src="./images/me.JPG" class="d-block main-img scroll-fade">
                     </div>
                     <div class="profile-text offset-2">
+                        <p>氏 名‥篠原 達弥<p></p>
+                        <p>年 齢‥28歳<p>
+                            <br>
                         <p>ポートフォリオをご覧頂きありがとうございます。</p>
-                        <p>篠原と申します。</p>
-                        <p>webエンジニアとして活動させていただいてます。</p>
+                        <p>ゲーム作ってみたい！という気持ちからプログラミングを学び始め、</p>
+                        <p>現在は、webエンジニアとして活動させていただいてます。</p>
+                        <p>主にrubyを扱うことが多いですが、言語にこだわらないでやっています。</p>
                         <p>生まれは愛知県、現在は東京都に住んでいます。</p>
-                        <p>温泉が好きです。</p>
-                        <p>是非おすすめの温泉がありましたら教えてください。笑</p>
+                        <p>映画館で観る映画、温泉や、風景をみるのが好きです。</p>
+                        <p>topの写真もその一部です。</p>
+                        <a href ="https://www.facebook.com/tatsuya.shinohara.1" target="_blank" rel="noopener noreferrer"　><i class="fab fa-facebook-square contact-icon color-3"></i> </a>
+                        <a href ="https://github.com/sinigam1192" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square contact-icon color-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -106,9 +124,9 @@
                         <i id="rails" class="devicons devicons-ruby_on_rails col-1 centers skill-icon"></i>
                     </div>
                     <div id="skill-content" class="skill-content col-6 offset-3">
-                        <h2>html, CSS, javascript</h2>
+                        <h2>HP作成</h2>
                         <div class='row'>
-                            <p class='col-4 offset-2 skill-centers centers'>html,css,javascriptを使用しwebサイトを作成することができます。</p>
+                            <p class='col-4 offset-2 skill-centers centers'>html,css,javascriptを駆使しwebサイトを作成することができます。本サイトも一から作成しております。</p>
                             <i class='fas fa-code col-4 skill-centers-icon skill-centers centers'></i>
                         </div>
                     </div>
@@ -131,17 +149,21 @@
                     <div class="contents-border-under"></div>
                 </div>
                 <div class="contents-chunk">
-                    <div class="wait-now"><p>準備中</p></div>
+                    <div class="form">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdj3HF1fda-COSS7cSreysEApnK91tfuCldQgjZkZrxQivhYw/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                    </div>
                 </div>
-
             </div>
-            
         </div>
-        <div id="page_top" class="bg-color-2"><a href="#"></a></div>
+        <footer class="color-footer">
+            
+        </footer>
+        <div id="page_top" class="bg-color-2"><a href="#top"></a></div>
 
         
 
         <footer>
         </footer>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
